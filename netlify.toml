@@ -1,0 +1,7 @@
+[build]
+  functions = "functions/"
+  command = "make build"
+  publish = "site"
+[build.environment]
+  # Change this path with the path to your repository
+  GO_IMPORT_PATH = "github.com:nguyenvanduocit/simpleLambda"
