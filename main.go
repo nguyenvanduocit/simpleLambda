@@ -13,9 +13,12 @@ import (
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	url := os.Getenv(`WEBHOOK`)
-	log.Println(url)
-	data := map[string]string{
-		"text": getQuote(),
+	data := map[string]interface{}{
+		"attachments": map[string]interface{}{
+			"title": "A quote everyday",
+			"author_name": "Drunk Friend",
+			"text": getQuote(),
+		},
 	}
 	jsonValue, _ := json.Marshal(data)
 	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonValue))
@@ -25,6 +28,7 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: resp.StatusCode,
+		Body: `Success`,
 	}, nil
 }
 
