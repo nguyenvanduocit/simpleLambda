@@ -13,6 +13,7 @@ import (
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	url := os.Getenv(`WEBHOOK`)
+	log.Println(url)
 	data := map[string]string{
 		"text": getQuote(),
 	}
