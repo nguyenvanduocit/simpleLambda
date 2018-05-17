@@ -79,8 +79,8 @@ func (bot *Bot)getActions()(events.APIGatewayProxyResponse, error){
 }
 
 func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	token := request.QueryStringParameters["token"]
-	if token != os.Getenv(`REQUEST_SECRET_KEY`) {
+	secret := request.QueryStringParameters["secret"]
+	if secret != os.Getenv(`REQUEST_SECRET`) {
 		bMessage, _ := json.Marshal(map[string]string{
 			"error": "You are not allowed to call this function",
 		})
