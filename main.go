@@ -26,6 +26,13 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 	}
 
 	bChannels, err := json.Marshal(channels)
+	if err != nil {
+		return events.APIGatewayProxyResponse{
+			StatusCode: http.StatusInternalServerError,
+			Body: err.Error(),
+		}, nil
+	}
+
 	return events.APIGatewayProxyResponse{
 		StatusCode: http.StatusOK,
 		Headers: map[string]string{
@@ -56,15 +63,43 @@ func (bot *Bot)getQuote()(events.APIGatewayProxyResponse, error){
 	}, nil
 }
 
+func (bot *Bot)getActions()(events.APIGatewayProxyResponse, error){
+	bActions, _ := json.Marshal([]string{
+		"sendMorningQuote",
+		"sendSleepQuote",
+	})
+
+	return events.APIGatewayProxyResponse{
+		StatusCode: http.StatusOK,
+		Headers: map[string]string{
+			"content-type": "application/json",
+		},
+		Body: string(bActions),
+	}, nil
+}
+
 func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	token := request.QueryStringParameters["token"]
+	if token != os.Getenv(`REQUEST_SECRET_KEY`) {
+		bMessage, _ := json.Marshal(map[string]string{
+			"error": "You are not allowed to call this function",
+		})
+		return events.APIGatewayProxyResponse{
+			StatusCode: http.StatusBadRequest,
+			Body: string(bMessage),
+		}, nil
+	}
 	action := request.QueryStringParameters["action"]
-	fmt.Println(action)
+	switch action {
+	case "channels":
+		return bot.getChannels()
+	}
 	return bot.getChannels()
 }
 
 func main() {
 	bot := &Bot{
-		Api: slack.New(os.Getenv(`TOKEN`)),
+		Api: slack.New(os.Getenv(`SLACK_TOKEN`)),
 	}
 	lambda.Start(bot.handler)
 }
