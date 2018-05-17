@@ -9,12 +9,8 @@ import (
 	"github.com/nlopes/slack"
 	"fmt"
 	"github.com/gin-gonic/gin/json"
-	"io/ioutil"
-	json2 "encoding/json"
 	"time"
 	"math/rand"
-	"path/filepath"
-	"log"
 )
 
 type Quote struct {
@@ -123,29 +119,7 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 	return bot.getActions()
 }
 
-func (bot *Bot)loadQUotes()error{
-	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
-	if err != nil {
-		log.Fatal(err)
-	}
-	fmt.Println(dir)
-
-	bQuotes, err := ioutil.ReadFile("./quotes.json")
-	if err != nil {
-		return err
-	}
-	if err := json2.Unmarshal(bQuotes, &bot.Quotes); err != nil {
-		return err
-	}
-	return nil
-}
-
 func (bot *Bot)getRandomQuote()(*Quote, error){
-	if len(bot.Quotes) == 0 {
-		if err:= bot.loadQUotes(); err != nil {
-			return nil, err
-		}
-	}
 	rand.Seed(time.Now().Unix())
 	return bot.Quotes[rand.Intn(len(bot.Quotes))], nil
 }
@@ -153,6 +127,7 @@ func (bot *Bot)getRandomQuote()(*Quote, error){
 func main() {
 	bot := &Bot{
 		Api: slack.New(os.Getenv(`SLACK_TOKEN`)),
+		Quotes: quotes,
 	}
 	lambda.Start(bot.handler)
 }
