@@ -5,31 +5,32 @@ import (
 	"github.com/aws/aws-lambda-go/lambda"
 	"context"
 	"net/http"
-	"bytes"
-	"encoding/json"
-	"log"
 	"os"
+	"github.com/nlopes/slack"
+	"fmt"
+	"log"
 )
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	url := os.Getenv(`WEBHOOK`)
-	data := map[string]interface{}{
-		"attachments": []map[string]interface{}{
-			{
-				"title": "A quote everyday",
-				"author_name": "Drunk Friend",
-				"text": getQuote(),
-			},
-		},
-	}
-	jsonValue, _ := json.Marshal(data)
-	resp, err := http.Post(url, "application/json", bytes.NewBuffer(jsonValue))
-	if err != nil {
-		log.Fatalln(err)
-	}
+	token := os.Getenv(`WEBHOOK`)
+	api := slack.New(token)
 
+	params := slack.PostMessageParameters{}
+	attachment := slack.Attachment{
+		Text:    "some text",
+	}
+	params.Attachments = []slack.Attachment{attachment}
+	channelID, timestamp, err := api.PostMessage("DAQFR3Z27", "Some text", params)
+	if err != nil {
+		log.Printf("%s\n", err)
+		return events.APIGatewayProxyResponse{
+			StatusCode: http.StatusInternalServerError,
+			Body: `Success`,
+		}, nil
+	}
+	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
 	return events.APIGatewayProxyResponse{
-		StatusCode: resp.StatusCode,
+		StatusCode: http.StatusOK,
 		Body: `Success`,
 	}, nil
 }
