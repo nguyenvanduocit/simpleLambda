@@ -382,11 +382,6 @@ var quotes = []*Quote{
 		Content: "We are all in the gutter, but some of us are looking at the stars.",
 	},
 	{
-		Author: "Bil Keane",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1320885123p2/3230608.jpg",
-		Content: "Yesterday is history, tomorrow is a mystery, today is a gift of God, which is why we call it the present.",
-	},
-	{
 		Author: "Neil GaimanCoraline",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1234150163p2/1221698.jpg",
 		Content: "Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.",
@@ -672,11 +667,6 @@ var quotes = []*Quote{
 		Content: "To love at all is to be vulnerable. Love anything and your heart will be wrung and possibly broken. If you want to make sure of keeping it intact you must give it to no one, not even an animal. Wrap it carefully round with hobbies and little luxuries; avoid all entanglements. Lock it up safe in the casket or coffin of your selfishness. But in that casket, safe, dark, motionless, airless, it will change. It will not be broken; it will become unbreakable, impenetrable, irredeemable. To love is to be vulnerable.",
 	},
 	{
-		Author: "Rosemarie Urquico",
-		AuthorAvatar: "",
-		Content: "You should date a girl who reads.Date a girl who reads. Date a girl who spends her money on books instead of clothes, who has problems with closet space because she has too many books. Date a girl who has a list of books she wants to read, who has had a library card since she was twelve.Find a girl who reads. You’ll know that she does because she will always have an unread book in her bag. She’s the one lovingly looking over the shelves in the bookstore, the one who quietly cries out when she has found the book she wants. You see that weird chick sniffing the pages of an old book in a secondhand book shop? That’s the reader. They can never resist smelling the pages, especially when they are yellow and worn.She’s the girl reading while waiting in that coffee shop down the street. If you take a peek at her mug, the non-dairy creamer is floating on top because she’s kind of engrossed already. Lost in a world of the author’s making. Sit down. She might give you a glare, as most girls who read do not like to be interrupted. Ask her if she likes the book.Buy her another cup of coffee.Let her know what you really think of Murakami. See if she got through the first chapter of Fellowship. Understand that if she says she understood James Joyce’s Ulysses she’s just saying that to sound intelligent. Ask her if she loves Alice or she would like to be Alice.It’s easy to date a girl who reads. Give her books for her birthday, for Christmas, for anniversaries. Give her the gift of words, in poetry and in song. Give her Neruda, Pound, Sexton, Cummings. Let her know that you understand that words are love. Understand that she knows the difference between books and reality but by god, she’s going to try to make her life a little like her favorite book. It will never be your fault if she does.She has to give it a shot somehow.Lie to her. If she understands syntax, she will understand your need to lie. Behind words are other things: motivation, value, nuance, dialogue. It will not be the end of the world.Fail her. Because a girl who reads knows that failure always leads up to the climax. Because girls who read understand that all things must come to end, but that you can always write a sequel. That you can begin again and again and still be the hero. That life is meant to have a villain or two.Why be frightened of everything that you are not? Girls who read understand that people, like characters, develop. Except in the Twilight series.If you find a girl who reads, keep her close. When you find her up at 2 AM clutching a book to her chest and weeping, make her a cup of tea and hold her. You may lose her for a couple of hours but she will always come back to you. She’ll talk as if the characters in the book are real, because for a while, they always are.You will propose on a hot air balloon. Or during a rock concert. Or very casually next time she’s sick. Over Skype.You will smile so hard you will wonder why your heart hasn’t burst and bled out all over your chest yet. You will write the story of your lives, have kids with strange names and even stranger tastes. She will introduce your children to the Cat in the Hat and Aslan, maybe in the same day. You will walk the winters of your old age together and she will recite Keats under her breath while you shake the snow off your boots.Date a girl who reads because you deserve it. You deserve a girl who can give you the most colorful life imaginable. If you can only give her monotony, and stale hours and half-baked proposals, then you’re better off alone. If you want the world and the worlds beyond it, date a girl who reads.Or better yet, date a girl who writes.",
-	},
-	{
 		Author: "J.K. RowlingHarry Potter and the Deathly Hallows",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1510435123p2/1077326.jpg",
 		Content: "Dumbledore watched her fly away, and as her silvery glow faded he turned back to Snape, and his eyes were full of tears.\"After all this time?\"\"Always,\" said Snape.",
@@ -957,19 +947,9 @@ var quotes = []*Quote{
 		Content: "We believe in ordinary acts of bravery, in the courage that drives one person to stand up for another.",
 	},
 	{
-		Author: "John GreenThe Fault in Our Stars",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1353452301p2/1406384.jpg",
-		Content: "There are infinite numbers between 0 and 1. There's .1 and .12 and .112 and an infinite collection of others. Of course, there is a bigger infinite set of numbers between 0 and 2, or between 0 and a million. Some infinities are bigger than other infinities. A writer we used to like taught us that. There are days, many of them, when I resent the size of my unbounded set. I want more numbers than I'm likely to get, and God, I want more numbers for Augustus Waters than he got. But, Gus, my love, I cannot tell you how thankful I am for our little infinity. I wouldn't trade it for the world. You gave me a forever within the numbered days, and I'm grateful.",
-	},
-	{
 		Author: "Jane AustenPride and Prejudice",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1380085320p2/1265.jpg",
 		Content: "A lady's imagination is very rapid; it jumps from admiration to love, from love to matrimony in a moment.",
-	},
-	{
-		Author: "Marianne WilliamsonA Return to Love: Reflections on the Principles of \"A Course in Miracles\"",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1198520601p2/17297.jpg",
-		Content: "Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness that most frightens us. We ask ourselves, 'Who am I to be brilliant, gorgeous, talented, fabulous?' Actually, who are you not to be? You are a child of God. Your playing small does not serve the world. There is nothing enlightened about shrinking so that other people won't feel insecure around you. We are all meant to shine, as children do. We were born to make manifest the glory of God that is within us. It's not just in some of us; it's in everyone. And as we let our own light shine, we unconsciously give other people permission to do the same. As we are liberated from our own fear, our presence automatically liberates others.",
 	},
 	{
 		Author: "Stephen ChboskyThe Perks of Being a Wallflower",
@@ -1482,11 +1462,6 @@ var quotes = []*Quote{
 		Content: "Nothing is impossible, the word itself says 'I'm possible'!",
 	},
 	{
-		Author: "Chuck PalahniukInvisible Monsters",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1391203076p2/2546.jpg",
-		Content: "All God does is watch us and kill us when we get boring. We must never, ever be boring.",
-	},
-	{
 		Author: "John GreenAn Abundance of Katherines",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1353452301p2/1406384.jpg",
 		Content: "What is the point of being alive if you don't at least try to do something remarkable?",
@@ -1742,11 +1717,6 @@ var quotes = []*Quote{
 		Content: "Don't think or judge, just listen.",
 	},
 	{
-		Author: "C.S. Lewis",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "The Christian does not think God will love us because we are good, but that God will make us good because He loves us.",
-	},
-	{
 		Author: "Paulo CoelhoThe Alchemist",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1201840056p2/566.jpg",
 		Content: "So, I love you because the entire universe conspired to help me find you.",
@@ -1997,11 +1967,6 @@ var quotes = []*Quote{
 		Content: "It means 'Shadowhunters: Looking Better in Black Than the Widows of our Enemies Since 1234'.",
 	},
 	{
-		Author: "Théophile Gautier",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1217372455p2/103384.jpg",
-		Content: "Chance is perhaps the pseudonym of God when he does not want to sign.",
-	},
-	{
 		Author: "Chuck PalahniukDiary",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1391203076p2/2546.jpg",
 		Content: "We all die. The goal isn't to live forever, the goal is to create something that will.",
@@ -2090,11 +2055,6 @@ var quotes = []*Quote{
 		Author: "Nicholas SparksThe Notebook",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1468247396p2/2345.jpg",
 		Content: "We fell in love, despite our differences, and once we did, something rare and beautiful was created. For me, love like that has only happened once, and that's why every minute we spent together has been seared in my memory. I'll never forget a single moment of it.",
-	},
-	{
-		Author: "Neil GaimanAmerican Gods",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1234150163p2/1221698.jpg",
-		Content: "I can believe things that are true and things that aren't true and I can believe things where nobody knows if they're true or not. I can believe in Santa Claus and the Easter Bunny and the Beatles and Marilyn Monroe and Elvis and Mister Ed. Listen - I believe that people are perfectable, that knowledge is infinite, that the world is run by secret banking cartels and is visited by aliens on a regular basis, nice ones that look like wrinkled lemurs and bad ones who mutilate cattle and want our water and our women. I believe that the future sucks and I believe that the future rocks and I believe that one day White Buffalo Woman is going to come back and kick everyone's ass. I believe that all men are just overgrown boys with deep problems communicating and that the decline in good sex in America is coincident with the decline in drive-in movie theaters from state to state. I believe that all politicians are unprincipled crooks and I still believe that they are better than the alternative. I believe that California is going to sink into the sea when the big one comes, while Florida is going to dissolve into madness and alligators and toxic waste. I believe that antibacterial soap is destroying our resistance to dirt and disease so that one day we'll all be wiped out by the common cold like martians in War of the Worlds. I believe that the greatest poets of the last century were Edith Sitwell and Don Marquis, that jade is dried dragon sperm, and that thousands of years ago in a former life I was a one-armed Siberian shaman. I believe that mankind's destiny lies in the stars. I believe that candy really did taste better when I was a kid, that it's aerodynamically impossible for a bumble bee to fly, that light is a wave and a particle, that there's a cat in a box somewhere who's alive and dead at the same time (although if they don't ever open the box to feed it it'll eventually just be two different kinds of dead), and that there are stars in the universe billions of years older than the universe itself. I believe in a personal god who cares about me and worries and oversees everything I do. I believe in an impersonal god who set the universe in motion and went off to hang with her girlfriends and doesn't even know that I'm alive. I believe in an empty and godless universe of causal chaos, background noise, and sheer blind luck. I believe that anyone who says sex is overrated just hasn't done it properly. I believe that anyone who claims to know what's going on will lie about the little things too. I believe in absolute honesty and sensible social lies. I believe in a woman's right to choose, a baby's right to live, that while all human life is sacred there's nothing wrong with the death penalty if you can trust the legal system implicitly, and that no one but a moron would ever trust the legal system. I believe that life is a game, that life is a cruel joke, and that life is what happens when you're alive and that you might as well lie back and enjoy it.",
 	},
 	{
 		Author: "Chuck PalahniukFight Club",
@@ -2327,11 +2287,6 @@ var quotes = []*Quote{
 		Content: "We write to taste life twice, in the moment and in retrospect.",
 	},
 	{
-		Author: "John GreenThe Fault in Our Stars",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1353452301p2/1406384.jpg",
-		Content: "There will come a time when all of us are dead. All of us. There will come a time when there are no human beings remaining to remember that anyone ever existed or that our species ever did anything. There will be no one left to remember Aristotle or Cleopatra, let alone you. Everything that we did and built and wrote and thought and discovered will be forgotten and all of this will have been for naught. Maybe that time is coming soon and maybe it is millions of years away, but even if we survive the collapse of our sun, we will not survive forever. There was time before organisms experienced consciousness, and there will be time after. And if the inevitability of human oblivion worries you, I encourage you to ignore it. God knows that’s what everyone else does.",
-	},
-	{
 		Author: "Suzanne CollinsThe Hunger Games",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1394819770p2/153394.jpg",
 		Content: "Deep in the meadow, hidden far awayA cloak of leaves, a moonbeam rayForget your woes and let your troubles layAnd when it's morning again, they'll wash awayHere it's safe, here it's warmHere the daisies guard you from every harmHere your dreams are sweet and tomorrow brings them trueHere is the place where I love you.",
@@ -2517,11 +2472,6 @@ var quotes = []*Quote{
 		Content: "I think that if I ever have kids, and they are upset, I won't tell them that people are starving in China or anything like that because it wouldn't change the fact that they were upset. And even if somebody else has it much worse, that doesn't really change the fact that you have what you have.",
 	},
 	{
-		Author: "Alexandre Dumas",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1279049943p2/4785.jpg",
-		Content: "There is neither happiness nor misery in the world; there is only the comparison of one state with another, nothing more. He who has felt the deepest grief is best able to experience supreme happiness. We must have felt what it is to die, Morrel, that we may appreciate the enjoyments of life. \" Live, then, and be happy, beloved children of my heart, and never forget, that until the day God will deign to reveal the future to man, all human wisdom is contained in these two words, 'Wait and Hope.",
-	},
-	{
 		Author: "Cassandra ClareCity of Ashes",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
 		Content: "Well, I’m not kissing the mundane,\" said Jace. \"I’d rather stay down here and rot.\"\"Forever?\" said Simon. \"Forever’s an awfully long time.\"Jace raised his eyebrows. \"I knew it,\" he said. \"You want to kiss me, don’t you?",
@@ -2535,11 +2485,6 @@ var quotes = []*Quote{
 		Author: "Stephen Hawking",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1197404653p2/1401.jpg",
 		Content: "One, remember to look up at the stars and not down at your feet. Two, never give up work. Work gives you meaning and purpose and life is empty without it. Three, if you are lucky enough to find love, remember it is there and don't throw it away.",
-	},
-	{
-		Author: "Stephen KingStorm of the Century: An Original Screenplay",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1362814142p2/3389.jpg",
-		Content: "When his life was ruined, his family killed, his farm destroyed, Job knelt down on the ground and yelled up to the heavens, \"Why god? Why me?\" and the thundering voice of God answered, There's just something about you that pisses me off.",
 	},
 	{
 		Author: "Frederick Douglass",
@@ -2772,11 +2717,6 @@ var quotes = []*Quote{
 		Content: "The more I know of the world, the more I am convinced that I shall never see a man whom I can really love. I require so much!",
 	},
 	{
-		Author: "Charles Bukowski",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1501509674p2/13275.jpg",
-		Content: "For those who believe in God, most of the big questions are answered. But for those of us who can't readily accept the God formula, the big answers don't remain stone-written. We adjust to new conditions and discoveries. We are pliable. Love need not be a command nor faith a dictum. I am my own god. We are here to unlearn the teachings of the church, state, and our educational system. We are here to drink beer. We are here to kill war. We are here to laugh at the odds and live our lives so well that Death will tremble to take us.",
-	},
-	{
 		Author: "Oscar Wilde",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1521044377p2/3565.jpg",
 		Content: "Every saint has a past, and every sinner has a future.",
@@ -2935,11 +2875,6 @@ var quotes = []*Quote{
 		Author: "Oscar Wilde",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1521044377p2/3565.jpg",
 		Content: "You don't love someone for their looks, or their clothes, or for their fancy car, but because they sing a song only you can hear.",
-	},
-	{
-		Author: "Mark Twain",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1322103868p2/1244.jpg",
-		Content: "God created war so that Americans would learn geography.",
 	},
 	{
 		Author: "Paulo CoelhoBy the River Piedra I Sat Down and Wept",
@@ -3702,11 +3637,6 @@ var quotes = []*Quote{
 		Content: "I am a badass, and I recognize that you, too, are a badass.",
 	},
 	{
-		Author: "C.S. LewisMere Christianity",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "Imagine yourself as a living house. God comes in to rebuild that house. At first, perhaps, you can understand what He is doing. He is getting the drains right and stopping the leaks in the roof and so on; you knew that those jobs needed doing and so you are not surprised. But presently He starts knocking the house about in a way that hurts abominably and does not seem to make any sense. What on earth is He up to? The explanation is that He is building quite a different house from the one you thought of - throwing out a new wing here, putting on an extra floor there, running up towers, making courtyards. You thought you were being made into a decent little cottage: but He is building a palace. He intends to come and live in it Himself.",
-	},
-	{
 		Author: "Suzanne CollinsMockingjay",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1394819770p2/153394.jpg",
 		Content: "What I need is the dandelion in the spring. The bright yellow that means rebirth instead of destruction. The promise that life can go on, no matter how bad our losses. That it can be good again.",
@@ -3812,11 +3742,6 @@ var quotes = []*Quote{
 		Content: "Stop acting so small. You are the universe in ecstatic motion.",
 	},
 	{
-		Author: "Oscar Wilde",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1521044377p2/3565.jpg",
-		Content: "I think God, in creating man, somewhat overestimated his ability.",
-	},
-	{
 		Author: "Antoine de Saint-ExupéryAirman's Odyssey",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1330853515p2/1020792.jpg",
 		Content: "Love does not consist of gazing at each other, but in looking outward together in the same direction.",
@@ -3885,11 +3810,6 @@ var quotes = []*Quote{
 		Author: "Sylvia PlathThe Bell Jar",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1373572652p2/4379.jpg",
 		Content: "I saw my life branching out before me like the green fig tree in the story. From the tip of every branch, like a fat purple fig, a wonderful future beckoned and winked. One fig was a husband and a happy home and children, and another fig was a famous poet and another fig was a brilliant professor, and another fig was Ee Gee, the amazing editor, and another fig was Europe and Africa and South America, and another fig was Constantin and Socrates and Attila and a pack of other lovers with queer names and offbeat professions, and another fig was an Olympic lady crew champion, and beyond and above these figs were many more figs I couldn't quite make out. I saw myself sitting in the crotch of this fig tree, starving to death, just because I couldn't make up my mind which of the figs I would choose. I wanted each and every one of them, but choosing one meant losing all the rest, and, as I sat there, unable to decide, the figs began to wrinkle and go black, and, one by one, they plopped to the ground at my feet.",
-	},
-	{
-		Author: "Mother Teresa",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1263888735p2/838305.jpg",
-		Content: "I am not sure exactly what heaven will be like, but I know that when we die and it comes time for God to judge us, he will not ask, 'How many good things have you done in your life?' rather he will ask, 'How much love did you put into what you did?",
 	},
 	{
 		Author: "Friedrich Nietzsche",
@@ -4040,11 +3960,6 @@ var quotes = []*Quote{
 		Author: "Suzanne CollinsMockingjay",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1394819770p2/153394.jpg",
 		Content: "Fire is catching! And if we burn, you burn with us!",
-	},
-	{
-		Author: "C.S. Lewis",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "To be a Christian means to forgive the inexcusable because God has forgiven the inexcusable in you.",
 	},
 	{
 		Author: "Stephen ChboskyThe Perks of Being a Wallflower",
@@ -4284,11 +4199,6 @@ var quotes = []*Quote{
 	{
 		Author: "Rick RiordanThe Titan's Curse",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
-		Content: "Wow,\" Thalia muttered. \"Apollo is hot.\" \"He's the sun god,\" I said.\"That's not what I meant.",
-	},
-	{
-		Author: "Rick RiordanThe Titan's Curse",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
 		Content: "Ever had a flying burrito hit you? Well, it's a deadly projectile, right up there with cannonballs and grenades.",
 	},
 	{
@@ -4507,11 +4417,6 @@ var quotes = []*Quote{
 		Content: "There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.",
 	},
 	{
-		Author: "Mahatma Gandhi",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1356810912p2/5810891.jpg",
-		Content: "God has no religion.",
-	},
-	{
 		Author: "Umberto Eco",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1455915753p2/1730.jpg",
 		Content: "We live for books.",
@@ -4726,11 +4631,7 @@ var quotes = []*Quote{
 		AuthorAvatar: "https://images.gr-assets.com/authors/1359753468p2/569.jpg",
 		Content: "I suspect the truth is that we are waiting, all of us, against insurmountable odds, for something extraordinary to happen to us.",
 	},
-	{
-		Author: "Max Lucado",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1493056226p2/2737.jpg",
-		Content: "A woman's heart should be so hidden in God that a man has to seek Him just to find her.",
-	},
+
 	{
 		Author: "Cassandra ClareCity of Bones",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
@@ -4785,11 +4686,6 @@ var quotes = []*Quote{
 		Author: "J.K. RowlingHarry Potter and the Deathly Hallows",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1510435123p2/1077326.jpg",
 		Content: "Cinderella? Snow White? What's that? An illness?",
-	},
-	{
-		Author: "C.S. Lewis",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "We are not necessarily doubting that God will do the best for us; we are wondering how painful the best will turn out to be.",
 	},
 	{
 		Author: "Albert Einstein",
@@ -4920,11 +4816,6 @@ var quotes = []*Quote{
 		Author: "Edward Gorey",
 		AuthorAvatar: "https://images.gr-assets.com/quotes/1418090334p2/204145.jpg",
 		Content: "Books. Cats. Life is Good.",
-	},
-	{
-		Author: "Elbert Hubbard",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1216826209p2/114059.jpg",
-		Content: "God will not look you over for medals, degrees or diplomas but for scars.",
 	},
 	{
 		Author: "Frank Zappa",
@@ -5187,11 +5078,6 @@ var quotes = []*Quote{
 		Content: "Writing is a socially acceptable form of schizophrenia.",
 	},
 	{
-		Author: "Charlotte BrontëJane Eyre",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1335001351p2/1036615.jpg",
-		Content: "Do you think I am an automaton? — a machine without feelings? and can bear to have my morsel of bread snatched from my lips, and my drop of living water dashed from my cup? Do you think, because I am poor, obscure, plain, and little, I am soulless and heartless? You think wrong! — I have as much soul as you — and full as much heart! And if God had gifted me with some beauty and much wealth, I should have made it as hard for you to leave me, as it is now for me to leave you. I am not talking to you now through the medium of custom, conventionalities, nor even of mortal flesh: it is my spirit that addresses your spirit; just as if both had passed through the grave, and we stood at God's feet, equal — as we are!",
-	},
-	{
 		Author: "أحلام مستغانمي",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1351458215p2/1109606.jpg",
 		Content: "أجمل حب هو الذي نعثر عليه أثناء بحثنا عن شيء آخر",
@@ -5230,11 +5116,6 @@ var quotes = []*Quote{
 		Author: "Steven Wright",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1347482080p2/181771.jpg",
 		Content: "Right now I’m having amnesia and déjà vu at the same time. I think I’ve forgotten this before.",
-	},
-	{
-		Author: "Cassandra ClareCity of Bones",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
-		Content: "Just because you call an electric eel a rubber duck doesn't make it a rubber duck, does it? And God help the poor bastard who decides they want to take a bath with the duckie. (Jace Wayland)",
 	},
 	{
 		Author: "John GreenThe Fault in Our Stars",
@@ -6087,11 +5968,6 @@ var quotes = []*Quote{
 		Content: "Wherever you go becomes a part of you somehow.",
 	},
 	{
-		Author: "Richard DawkinsThe God Delusion",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1377030297p2/1194.jpg",
-		Content: "We are all atheists about most of the gods that humanity has ever believed in. Some of us just go one god further.",
-	},
-	{
 		Author: "Richard Feynman",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1498916887p2/1429989.jpg",
 		Content: "Nobody ever figures out what life is all about, and it doesn't matter. Explore the world. Nearly everything is really interesting if you go into it deeply enough.",
@@ -6130,11 +6006,6 @@ var quotes = []*Quote{
 		Author: "Jonathan Safran FoerEverything Is Illuminated",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1466172069p2/2617.jpg",
 		Content: "It was not the feeling of completeness I so needed, but the feeling of not being empty.",
-	},
-	{
-		Author: "Kurt Vonnegut",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1433582280p2/2778055.jpg",
-		Content: "If I should ever die, God forbid, let this be my epitaph:THE ONLY PROOF HE NEEDEDFOR THE EXISTENCE OF GODWAS MUSIC",
 	},
 	{
 		Author: "Nicholson BakerThe Anthologist",
@@ -6210,11 +6081,6 @@ var quotes = []*Quote{
 		Author: "Neil Gaiman",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1234150163p2/1221698.jpg",
 		Content: "Stories may well be lies, but they are good lies that say true things, and which can sometimes pay the rent.",
-	},
-	{
-		Author: "C.S. LewisThe Problem of Pain",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "A man can no more diminish God's glory by refusing to worship Him than a lunatic can put out the sun by scribbling the word 'darkness' on the walls of his cell.",
 	},
 	{
 		Author: "Dr. SeussOh, The Places You'll Go!",
@@ -6567,11 +6433,6 @@ var quotes = []*Quote{
 		Content: "Time is Too Slow for those who Wait, Too Swift for those who Fear, Too Long for those who Grieve, Too Short for those who Rejoice; But for those who Love, Time is not.",
 	},
 	{
-		Author: "Paulo CoelhoThe Alchemist",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1201840056p2/566.jpg",
-		Content: "Tell your heart that the fear of suffering is worse than the suffering itself. And that no heart has ever suffered when it goes in search of its dreams, because every second of the search is a second's encounter with God and with eternity.",
-	},
-	{
 		Author: "Christopher Paolini",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1412963950p2/8349.jpg",
 		Content: "Books should go where they will be most appreciated, and not sit unread, gathering dust on a forgotten shelf, don't you agree?",
@@ -6775,11 +6636,6 @@ var quotes = []*Quote{
 		Author: "Markus ZusakThe Book Thief",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1376268260p2/11466.jpg",
 		Content: "Imagine smiling after a slap in the face. Then think of doing it twenty-four hours a day.",
-	},
-	{
-		Author: "Sylvia Plath",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1373572652p2/4379.jpg",
-		Content: "Mad Girl's Love SongI shut my eyes and all the world drops dead;I lift my lids and all is born again.(I think I made you up inside my head.)The stars go waltzing out in blue and red,And arbitrary blackness gallops in:I shut my eyes and all the world drops dead.I dreamed that you bewitched me into bedAnd sung me moon-struck, kissed me quite insane.(I think I made you up inside my head.)God topples from the sky, hell's fires fade:Exit seraphim and Satan's men:I shut my eyes and all the world drops dead.I fancied you'd return the way you said,But I grow old and I forget your name.(I think I made you up inside my head.)I should have loved a thunderbird instead;At least when spring comes they roar back again.I shut my eyes and all the world drops dead.(I think I made you up inside my head.)",
 	},
 	{
 		Author: "Paulo Coelho",
@@ -7057,11 +6913,6 @@ var quotes = []*Quote{
 		Content: "Cruelty does not make a person dishonest, the same way bravery does not make a person kind.",
 	},
 	{
-		Author: "Hermann HesseBäume. Betrachtungen und Gedichte",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1499981916p2/1113469.jpg",
-		Content: "For me, trees have always been the most penetrating preachers. I revere them when they live in tribes and families, in forests and groves. And even more I revere them when they stand alone. They are like lonely persons. Not like hermits who have stolen away out of some weakness, but like great, solitary men, like Beethoven and Nietzsche. In their highest boughs the world rustles, their roots rest in infinity; but they do not lose themselves there, they struggle with all the force of their lives for one thing only: to fulfil themselves according to their own laws, to build up their own form, to represent themselves. Nothing is holier, nothing is more exemplary than a beautiful, strong tree. When a tree is cut down and reveals its naked death-wound to the sun, one can read its whole history in the luminous, inscribed disk of its trunk: in the rings of its years, its scars, all the struggle, all the suffering, all the sickness, all the happiness and prosperity stand truly written, the narrow years and the luxurious years, the attacks withstood, the storms endured. And every young farmboy knows that the hardest and noblest wood has the narrowest rings, that high on the mountains and in continuing danger the most indestructible, the strongest, the ideal trees grow. Trees are sanctuaries. Whoever knows how to speak to them, whoever knows how to listen to them, can learn the truth. They do not preach learning and precepts, they preach, undeterred by particulars, the ancient law of life. A tree says: A kernel is hidden in me, a spark, a thought, I am life from eternal life. The attempt and the risk that the eternal mother took with me is unique, unique the form and veins of my skin, unique the smallest play of leaves in my branches and the smallest scar on my bark. I was made to form and reveal the eternal in my smallest special detail. A tree says: My strength is trust. I know nothing about my fathers, I know nothing about the thousand children that every year spring out of me. I live out the secret of my seed to the very end, and I care for nothing else. I trust that God is in me. I trust that my labor is holy. Out of this trust I live. When we are stricken and cannot bear our lives any longer, then a tree has something to say to us: Be still! Be still! Look at me! Life is not easy, life is not difficult. Those are childish thoughts. Let God speak within you, and your thoughts will grow silent. You are anxious because your path leads away from mother and home. But every step and every day lead you back again to the mother. Home is neither here nor there. Home is within you, or home is nowhere at all. A longing to wander tears my heart when I hear trees rustling in the wind at evening. If one listens to them silently for a long time, this longing reveals its kernel, its meaning. It is not so much a matter of escaping from one's suffering, though it may seem to be so. It is a longing for home, for a memory of the mother, for new metaphors for life. It leads home. Every path leads homeward, every step is birth, every step is death, every grave is mother. So the tree rustles in the evening, when we stand uneasy before our own childish thoughts: Trees have long thoughts, long-breathing and restful, just as they have longer lives than ours. They are wiser than we are, as long as we do not listen to them. But when we have learned how to listen to trees, then the brevity and the quickness and the childlike hastiness of our thoughts achieve an incomparable joy. Whoever has learned how to listen to trees no longer wants to be a tree. He wants to be nothing except what he is. That is home. That is happiness.",
-	},
-	{
 		Author: "Julian BarnesFlaubert's Parrot",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1387175450p2/1462.jpg",
 		Content: "Books say: She did this because. Life says: She did this. Books are where things are explained to you; life is where things aren't. I'm not surprised some people prefer books.",
@@ -7230,11 +7081,6 @@ var quotes = []*Quote{
 		Author: "RumiThe Essential Rumi",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1217355543p2/875661.jpg",
 		Content: "Don't be satisfied with stories, how things have gone with others. Unfold your own myth.",
-	},
-	{
-		Author: "Corrie ten Boom",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1217173231p2/102203.jpg",
-		Content: "Never be afraid to trust an unknown future to a known God.",
 	},
 	{
 		Author: "Stephenie MeyerNew Moon",
@@ -7607,11 +7453,6 @@ var quotes = []*Quote{
 		Content: "So when the moon's only partly full, you only feel a little wolfy?\" \"You could say that.\"\"Well, you can go ahead and hang your head out the car window if you feel like it.\"\"I'm a werewolf, not a golden retriever.",
 	},
 	{
-		Author: "Jay McInerneyThe Last of the Savages",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1178138066p2/14079.jpg",
-		Content: "The capacity for friendship is God's way of apologizing for our families.",
-	},
-	{
 		Author: "Rick Riordan",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
 		Content: "I nodded, looking at Rachel with respect. \"You hit the Lord of the Titans in the eye with a blue plastic hairbrush.",
@@ -7725,11 +7566,6 @@ var quotes = []*Quote{
 		Author: "Harper LeeTo Kill a Mockingbird",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1188820730p2/1825.jpg",
 		Content: "I think there's just one kind of folks. Folks.",
-	},
-	{
-		Author: "Søren Kierkegaard",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1202410387p2/6172.jpg",
-		Content: "The function of prayer is not to influence God, but rather to change the nature of the one who prays.",
 	},
 	{
 		Author: "Sarah DessenThe Truth About Forever",
@@ -8002,11 +7838,6 @@ var quotes = []*Quote{
 		Content: "you can, you should, and if you’re brave enough to start, you will.",
 	},
 	{
-		Author: "Zora Neale HurstonTheir Eyes Were Watching God",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1194472605p2/15151.jpg",
-		Content: "There are years that ask questions and years that answer.",
-	},
-	{
 		Author: "William ShakespeareA Midsummer Night's Dream",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1424313573p2/947.jpg",
 		Content: "Though she be but little, she is fierce!",
@@ -8222,11 +8053,6 @@ var quotes = []*Quote{
 		Content: "I want to grow old without facelifts. I want to have the courage to be loyal to the face I have made.",
 	},
 	{
-		Author: "C.S. LewisMere Christianity",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "I am trying here to prevent anyone saying the really foolish thing that people often say about Him: I’m ready to accept Jesus as a great moral teacher, but I don’t accept his claim to be God. That is the one thing we must not say. A man who was merely a man and said the sort of things Jesus said would not be a great moral teacher. He would either be a lunatic — on the level with the man who says he is a poached egg — or else he would be the Devil of Hell. You must make your choice. Either this man was, and is, the Son of God, or else a madman or something worse. You can shut him up for a fool, you can spit at him and kill him as a demon or you can fall at his feet and call him Lord and God, but let us not come with any patronizing nonsense about his being a great human teacher. He has not left that open to us. He did not intend to.",
-	},
-	{
 		Author: "José N. HarrisMI VIDA: A Story of Faith, Hope and Love",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1414207447p2/4631437.jpg",
 		Content: "Tears shed for another person are not a sign of weakness. They are a sign of a pure heart.",
@@ -8250,11 +8076,6 @@ var quotes = []*Quote{
 		Author: "J.K. RowlingHarry Potter and the Sorcerer's Stone",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1510435123p2/1077326.jpg",
 		Content: "There are some things you can't share without ending up liking each other, and knocking out a twelve-foot mountain troll is one of them.",
-	},
-	{
-		Author: "Rumi",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1217355543p2/875661.jpg",
-		Content: "When I am with you, we stay up all night.When you're not here, I can't go to sleep.Praise God for those two insomnias!And the difference between them.",
 	},
 	{
 		Author: "Anne Lamott",
@@ -8295,11 +8116,6 @@ var quotes = []*Quote{
 		Author: "A.J. Cronin",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1211475194p2/807271.jpg",
 		Content: "Worry never robs tomorrow of its sorrow, but only saps today of its strength.",
-	},
-	{
-		Author: "Fyodor DostoyevskyCrime and Punishment",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1506003555p2/3137322.jpg",
-		Content: "The darker the night, the brighter the stars,  The deeper the grief, the closer is God!",
 	},
 	{
 		Author: "Jojo MoyesMe Before You",
@@ -8360,11 +8176,6 @@ var quotes = []*Quote{
 		Author: "Douglas AdamsThe Hitchhiker's Guide to the Galaxy",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1189120061p2/4.jpg",
 		Content: "Time is an illusion. Lunchtime doubly so.",
-	},
-	{
-		Author: "Kurt Vonnegut",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1433582280p2/2778055.jpg",
-		Content: "Hello babies. Welcome to Earth. It's hot in the summer and cold in the winter. It's round and wet and crowded. On the outside, babies, you've got a hundred years here. There's only one rule that I know of, babies-\"God damn it, you've got to be kind.",
 	},
 	{
 		Author: "E.L. JamesFifty Shades of Grey",
@@ -8430,11 +8241,6 @@ var quotes = []*Quote{
 		Author: "Zelda FitzgeraldThe Collected Writings",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1427041106p2/28243.jpg",
 		Content: "She refused to be bored chiefly because she wasn't boring.",
-	},
-	{
-		Author: "Friedrich Nietzsche",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1455294131p2/1938.jpg",
-		Content: "I cannot believe in a God who wants to be praised all the time.",
 	},
 	{
 		Author: "Lady Gaga",
@@ -8767,11 +8573,6 @@ var quotes = []*Quote{
 		Content: "What she was finding also was how one book led to another, doors kept opening wherever she turned and the days weren't long enough for the reading she wanted to do.",
 	},
 	{
-		Author: "C.S. Lewis",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "God can't give us peace and happiness apart from Himself because there is no such thing.",
-	},
-	{
 		Author: "Winston S. Churchill",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1306133803p2/14033.jpg",
 		Content: "Success is stumbling from failure to failure with no loss of enthusiasm.",
@@ -8837,11 +8638,6 @@ var quotes = []*Quote{
 		Content: "Sometimes when I look at you, I feel I'm gazing at a distant star. It's dazzling, but the light is from tens of thousands of years ago.Maybe the star doesn't even exist any more. Yet sometimes that light seems more real to me than anything.",
 	},
 	{
-		Author: "Rick Riordan",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
-		Content: "Dreams like a podcast,Downloading truth in my ears.They tell me cool stuff.\"\"Apollo?\" I guess, because I figured nobody else could make a haiku that bad.He put his finger to his lips. \"I'm incognito. Call me Fred.\"\"A god named Fred?",
-	},
-	{
 		Author: "Robert Orben",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1250696742p2/1032064.jpg",
 		Content: "Illegal aliens have always been a problem in the United States. Ask any Indian.",
@@ -8870,11 +8666,6 @@ var quotes = []*Quote{
 		Author: "J.K. RowlingHarry Potter and the Order of the Phoenix",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1510435123p2/1077326.jpg",
 		Content: "Give her hell from us, Peeves.",
-	},
-	{
-		Author: "C.S. Lewis",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
-		Content: "Pain insists upon being attended to. God whispers to us in our pleasures, speaks in our consciences, but shouts in our pains. It is his megaphone to rouse a deaf world.",
 	},
 	{
 		Author: "Paulo Coelho",
@@ -8977,11 +8768,6 @@ var quotes = []*Quote{
 		Content: "People demand freedom of speech as a compensation for the freedom of thought which they seldom use.",
 	},
 	{
-		Author: "Walt Whitman",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1392303683p2/1438.jpg",
-		Content: "This is what you shall do; Love the earth and sun and the animals, despise riches, give alms to every one that asks, stand up for the stupid and crazy, devote your income and labor to others, hate tyrants, argue not concerning God, have patience and indulgence toward the people, take off your hat to nothing known or unknown or to any man or number of men, go freely with powerful uneducated persons and with the young and with the mothers of families, read these leaves in the open air every season of every year of your life, re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul, and your very flesh shall be a great poem and have the richest fluency not only in its words but in the silent lines of its lips and face and between the lashes of your eyes and in every motion and joint of your body.",
-	},
-	{
 		Author: "Deepak Chopra",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1400537940p2/138207.jpg",
 		Content: "Every time you are tempted to react in the same old way, ask if you want to be a prisoner of the past or a pioneer of the future.",
@@ -9077,11 +8863,6 @@ var quotes = []*Quote{
 		Content: "You wanna fly, you got to give up the shit that weighs you down.",
 	},
 	{
-		Author: "Paulo CoelhoBrida",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1201840056p2/566.jpg",
-		Content: "When you find your path, you must not be afraid. You need to have sufficient courage to make mistakes. Disappointment, defeat, and despair are the tools God uses to show us the way.",
-	},
-	{
 		Author: "Franz Kafka",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1495464914p2/5223.jpg",
 		Content: "Youth is happy because it has the capacity to see beauty. Anyone who keeps the ability to see beauty never grows old.",
@@ -9125,11 +8906,6 @@ var quotes = []*Quote{
 		Author: "Richelle MeadVampire Academy",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1270374609p2/137902.jpg",
 		Content: "The spell. Victor said you had to want me... to care about me... for it to work.\" When he didn't say anything, I tried to grip his shirt, but my fingers were too weak. \"Did you? Did you want me?\"His words came out thickly. \"Yes, Roza. I did want you. I still do. I wish... we could be together.\"\"Then why did you lie to me?\"We reached the clinic, and he managed to open the door while still holding me. As soon as he stepped inside, he began yelling for help. \"Why did you lie?\" I murmured again.Still holding me in his arms, he looked down at me. I could hear voices and footsteps getting closer.\"Because we can't be together.\"\"Because of the age thing, right?\" I asked. \"Because you're my mentor?\"His fingertip gently wiped away a tear that had escaped down my cheek. \"That's part of it,\" he said. \"But also... well, you and I will both be Lissa's gaurdians someday. I need to protect her at all cost. If a pack of Strogoi come, I need to throw my body between them and her.\"I know that. Of course that's what you have to do.\" The black sparkles were dancing in front of my eyes again. I was fading out.\"No. If I let myself love you, I won't throw myself in front of her. I'll throw myself in front of you.",
-	},
-	{
-		Author: "Aldous HuxleyBrave New World",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1499982247p2/3487.jpg",
-		Content: "But I don't want comfort. I want God, I want poetry, I want real danger, I want freedom, I want goodness. I want sin.",
 	},
 	{
 		Author: "C.S. Lewis",
@@ -9547,11 +9323,6 @@ var quotes = []*Quote{
 		Content: "I know I am but summer to your heart, and not the full four seasons of the year.",
 	},
 	{
-		Author: "Max LucadoHe Still Moves Stones: Everyone Needs a Miracle",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1493056226p2/2737.jpg",
-		Content: "Faith is not the belief that God will do what you want. It is the belief that God will do what is right.",
-	},
-	{
 		Author: "Fernando PessoaThe Book of Disquiet",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1427039317p2/7816.jpg",
 		Content: "Literature is the most agreeable way of ignoring life.",
@@ -9565,11 +9336,6 @@ var quotes = []*Quote{
 		Author: "Stephen ChboskyThe Perks of Being a Wallflower",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1199070302p2/12898.jpg",
 		Content: "And I guess I realized at that moment that I really did love her. Because there was nothing to gain, and that didn't matter.",
-	},
-	{
-		Author: "Dorothy Parker",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1188820565p2/24956.jpg",
-		Content: "If you want to know what God thinks of money, just look at the people he gave it to.",
 	},
 	{
 		Author: "J.K. RowlingHarry Potter and the Deathly Hallows",
@@ -9702,11 +9468,6 @@ var quotes = []*Quote{
 		Content: "Remember if people talk behind your back, it only means you are two steps ahead.",
 	},
 	{
-		Author: "J.D. SalingerFranny and Zooey",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1288777679p2/819789.jpg",
-		Content: "I'm sick of just liking people. I wish to God I could meet somebody I could respect.",
-	},
-	{
 		Author: "Robert A. HeinleinStarship Troopers",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1192826560p2/205.jpg",
 		Content: "Happiness consists in getting enough sleep. Just that, nothing more.",
@@ -9765,11 +9526,6 @@ var quotes = []*Quote{
 		Author: "C.S. Lewis",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1367519078p2/1069006.jpg",
 		Content: "I have learned now that while those who speak about one's miseries usually hurt, those who keep silence hurt more.",
-	},
-	{
-		Author: "Emily BrontëWuthering Heights",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1473229007p2/4191.jpg",
-		Content: "Be with me always - take any form - drive me mad! only do not leave me in this abyss, where I cannot find you! Oh, God! it is unutterable! I can not live without my life! I can not live without my soul!",
 	},
 	{
 		Author: "Cassandra ClareCity of Glass",
@@ -10337,11 +10093,6 @@ var quotes = []*Quote{
 		Content: "If you have good friends, no matter how much life is sucking , they can make you laugh.",
 	},
 	{
-		Author: "Albert Einstein",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1429114964p2/9810.jpg",
-		Content: "Black holes are where God divided by zero.",
-	},
-	{
 		Author: "Stephen ChboskyThe Perks of Being a Wallflower",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1199070302p2/12898.jpg",
 		Content: "And all the books you've read have been read by other people. And all the songs you've loved have been heard by other people. And that girl that's pretty to you is pretty to other people. and that if you looked at these facts when you were happy, you would feel great because you are describing 'unity.",
@@ -10440,11 +10191,6 @@ var quotes = []*Quote{
 		Author: "Jasper FfordeSomething Rotten",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1350497674p2/4432.jpg",
 		Content: "If the real world were a book, it would never find a publisher. Overlong, detailed to the point of distraction-and ultimately, without a major resolution.",
-	},
-	{
-		Author: "Nicholas SparksThe Last Song",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1468247396p2/2345.jpg",
-		Content: "I have faith that God will show you the answer. But you have to understand that sometimes it takes a while to be able to recognize what God wants you to do. That's how it often is. God's voice is usually nothing more than a whisper, and you have to listen very carefully to hear it. But other times, in those rarest of moments, the answer is obvious and rings as loud as a church bell.",
 	},
 	{
 		Author: "Friedrich Nietzsche",
@@ -10577,11 +10323,6 @@ var quotes = []*Quote{
 		Content: "Of all the words of mice and men, the saddest are, \"It might have been.",
 	},
 	{
-		Author: "Christopher HitchensThe Portable Atheist: Essential Readings for the Nonbeliever",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1434046956p2/3956.jpg",
-		Content: "Owners of dogs will have noticed that, if you provide them with food and water and shelter and affection, they will think you are god. Whereas owners of cats are compelled to realize that, if you provide them with food and water and shelter and affection, they draw the conclusion that they are gods.",
-	},
-	{
 		Author: "Cassandra ClareClockwork Prince",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
 		Content: "Tess, Tess, Tessa. Was there ever a more beautiful sound than your name? To speak it aloud makes my heart ring like a bell. Strange to imagine that, isn’t it – a heart ringing – but when you touch me that is what it is like: as if my heart is ringing in my chest and the sound shivers down my veins and splinters my bones with joy.Why have I written these words in this book? Because of you. You taught me to love this book where I had scorned it. When I read it for the second time, with an open mind and heart, I felt the most complete despair and envy of Sydney Carton. Yes, Sydney, for even if he had no hope that the woman he loved would love him, at least he could tell her of his love. At least he could do something to prove his passion, even if that thing was to die.I would have chosen death for a chance to tell you the truth, Tessa, if I could have been assured that death would be my own. And that is why I envied Sydney, for he was free.And now at last I am free, and I can finally tell you, without fear of danger to you, all that I feel in my heart.You are not the last dream of my soul.You are the first dream, the only dream I ever was unable to stop myself from dreaming. You are the first dream of my soul, and from that dream I hope will come all other dreams, a lifetime’s worth.With hope at least,Will Herondale",
@@ -10607,16 +10348,6 @@ var quotes = []*Quote{
 		Content: "Why are you worrying about YOU-KNOW-WHO, when you should be worrying about YOU-NO-POO? The constipation sensation that's gripping the nation!",
 	},
 	{
-		Author: "Maya Angelou",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1379017377p2/3503.jpg",
-		Content: "A woman's heart should be so hidden in God that a man has to seek Him just to find her.",
-	},
-	{
-		Author: "Arundhati RoyThe God of Small Things",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1496705394p2/6134.jpg",
-		Content: "That's what careless words do. They make people love you a little less.",
-	},
-	{
 		Author: "Dante Alighieri",
 		AuthorAvatar: "https://images.gr-assets.com/quotes/1426181539p2/372374.jpg",
 		Content: "My course is set for an uncharted sea.",
@@ -10625,11 +10356,6 @@ var quotes = []*Quote{
 		Author: "Tim Burton",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1316033812p2/5773.jpg",
 		Content: "One person's craziness is another person's reality.",
-	},
-	{
-		Author: "Rumi",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1217355543p2/875661.jpg",
-		Content: "silence is the language of god, all else is poor translation.",
 	},
 	{
 		Author: "Rick RiordanThe Lightning Thief",
@@ -10775,11 +10501,6 @@ var quotes = []*Quote{
 		Author: "Mark Twain",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1322103868p2/1244.jpg",
 		Content: "It's not the size of the dog in the fight, it's the size of the fight in the dog.",
-	},
-	{
-		Author: "Abraham Lincoln",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1198518158p2/229.jpg",
-		Content: "My concern is not whether God is on our side; my greatest concern is to be on God's side, for God is always right.",
 	},
 	{
 		Author: "Jim Butcher",
@@ -11247,11 +10968,6 @@ var quotes = []*Quote{
 		Content: "Too many of us are hung up on what we don't have, can't have, or won't ever have. We spend too much energy being down, when we could use that same energy – if not less of it – doing, or at least trying to do, some of the things we really want to do.",
 	},
 	{
-		Author: "Cassandra ClareCity of Glass",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
-		Content: "I know it's wrong - God, it's all kinds of wrong - but I just want to lie down with you and wake up with you, just once, just once ever in my life.",
-	},
-	{
 		Author: "Louisa May AlcottLittle Women",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1200326665p2/1315.jpg",
 		Content: "I like good strong words that mean something…",
@@ -11347,11 +11063,6 @@ var quotes = []*Quote{
 		Content: "He awoke each morning with the desire to do right, to be a good and meaningful person, to be, as simple as it sounded and as impossible as it actually was, happy. And during the course of each day his heart would descend from his chest into his stomach. By early afternoon he was overcome by the feeling that nothing was right, or nothing was right for him, and by the desire to be alone. By evening he was fulfilled: alone in the magnitude of his grief, alone in his aimless guilt, alone even in his loneliness. I am not sad, he would repeat to himself over and over, I am not sad. As if he might one day convince himself. Or fool himself. Or convince others--the only thing worse than being sad is for others to know that you are sad. I am not sad. I am not sad. Because his life had unlimited potential for happiness, insofar as it was an empty white room. He would fall asleep with his heart at the foot of his bed, like some domesticated animal that was no part of him at all. And each morning he would wake with it again in the cupboard of his rib cage, having become a little heavier, a little weaker, but still pumping. And by the midafternoon he was again overcome with the desire to be somewhere else, someone else, someone else somewhere else. I am not sad.",
 	},
 	{
-		Author: "John GreenThe Fault in Our Stars",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1353452301p2/1406384.jpg",
-		Content: "Gus: \"It tastes like...\"Me: \"Food.\"Gus: \"Yes, precisely. It tastes like food, excellently prepared. But it does not taste, how do I put this delicately...?\"Me: \"It does not taste like God Himself cooked heaven into a series of five dishes which were then served to you accompanied by several luminous balls of fermented, bubbly plasma while actual and literal flower petals floated down around your canal-side dinner table.\"Gus: \"Nicely phrased.\"Gus's father: \"Our children are weird.\"My dad: \"Nicely phrased.",
-	},
-	{
 		Author: "Alexandre DumasThe Count of Monte Cristo",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1279049943p2/4785.jpg",
 		Content: "I am not proud, but I am happy; and happiness blinds, I think, more than pride.",
@@ -11375,11 +11086,6 @@ var quotes = []*Quote{
 		Author: "Dr. SeussI Can Read With My Eyes Shut!",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1193930952p2/61105.jpg",
 		Content: "You’ll miss the best things if you keep your eyes shut.",
-	},
-	{
-		Author: "Mahatma Gandhi",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1356810912p2/5810891.jpg",
-		Content: "Let the first act of every morning be to make the following resolve for the day:- I shall not fear anyone on Earth. - I shall fear only God. - I shall not bear ill will toward anyone. - I shall not submit to injustice from anyone. - I shall conquer untruth by truth. And in resisting untruth, I shall put up with all suffering.",
 	},
 	{
 		Author: "Rick RiordanThe Lightning Thief",
@@ -11465,11 +11171,6 @@ var quotes = []*Quote{
 		Author: "Terry PratchettGood Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1235562205p2/1654.jpg",
 		Content: "DON'T THINK OF IT AS DYING, said Death. JUST THINK OF IT AS LEAVING EARLY TO AVOID THE RUSH.",
-	},
-	{
-		Author: "Erma BombeckWhen God Created Mothers",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1208791191p2/11882.jpg",
-		Content: "When God Created Mothers\"When the Good Lord was creating mothers, He was into His sixth day of \"overtime\" when the angel appeared and said. \"You're doing a lot of fiddling around on this one.\" And God said, \"Have you read the specs on this order?\" She has to be completely washable, but not plastic. Have 180 moveable parts...all replaceable. Run on black coffee and leftovers. Have a lap that disappears when she stands up. A kiss that can cure anything from a broken leg to a disappointed love affair. And six pairs of hands.\" The angel shook her head slowly and said. \"Six pairs of hands.... no way.\" It's not the hands that are causing me problems,\" God remarked, \"it's the three pairs of eyes that mothers have to have.\" That's on the standard model?\" asked the angel. God nodded. One pair that sees through closed doors when she asks, 'What are you kids doing in there?' when she already knows. Another here in the back of her head that sees what she shouldn't but what she has to know, and of course the ones here in front that can look at a child when he goofs up and say. 'I understand and I love you' without so much as uttering a word.\" God,\" said the angel touching his sleeve gently, \"Get some rest tomorrow....\" I can't,\" said God, \"I'm so close to creating something so close to myself. Already I have one who heals herself when she is sick...can feed a family of six on one pound of hamburger...and can get a nine year old to stand under a shower.\" The angel circled the model of a mother very slowly. \"It's too soft,\" she sighed. But tough!\" said God excitedly. \"You can imagine what this mother can do or endure.\" Can it think?\" Not only can it think, but it can reason and compromise,\" said the Creator. Finally, the angel bent over and ran her finger across the cheek. There's a leak,\" she pronounced. \"I told You that You were trying to put too much into this model.\" It's not a leak,\" said the Lord, \"It's a tear.\" What's it for?\" It's for joy, sadness, disappointment, pain, loneliness, and pride.\" You are a genius, \" said the angel. Somberly, God said, \"I didn't put it there.",
 	},
 	{
 		Author: "Kazuo IshiguroNever Let Me Go",
@@ -11855,11 +11556,6 @@ var quotes = []*Quote{
 		Author: "Mitch AlbomTuesdays with Morrie",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1368640552p2/2331.jpg",
 		Content: "So many people walk around with a meaningless life. They seem half-asleep, even when they're busy doing things they think are important. This is because they're chasing the wrong things. The way you get meaning into your life is to devote yourself to loving others, devote yourself to your community around you, and devote yourself to creating something that gives you purpose and meaning.",
-	},
-	{
-		Author: "Shannon L. Alder",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1446155656p2/1391130.jpg",
-		Content: "Dignity/ˈdignitē/ noun 1. The moment you realize that the person you cared for has nothing intellectually or spiritually to offer you, but a headache. 2. The moment you realize God had greater plans for you that don’t involve crying at night or sad Pinterest quotes.3. The moment you stop comparing yourself to others because it undermines your worth, education and your parent’s wisdom.4. The moment you live your dreams, not because of what it will prove or get you, but because that is all you want to do. People’s opinions don’t matter. 5. The moment you realize that no one is your enemy, except yourself.6. The moment you realize that you can have everything you want in life. However, it takes timing, the right heart, the right actions, the right passion and a willingness to risk it all. If it is not yours, it is because you really didn’t want it, need it or God prevented it. 7. The moment you realize the ghost of your ancestors stood between you and the person you loved. They really don't want you mucking up the family line with someone that acts anything less than honorable.8. The moment you realize that happiness was never about getting a person. They are only a helpmate towards achieving your life mission.9. The moment you believe that love is not about losing or winning. It is just a few moments in time, followed by an eternity of situations to grow from.10. The moment you realize that you were always the right person. Only ignorant people walk away from greatness.",
 	},
 	{
 		Author: "Harlan Ellison",
@@ -12412,11 +12108,6 @@ var quotes = []*Quote{
 		Content: "Why do beautiful songs make you sad?' 'Because they aren't true.' 'Never?' 'Nothing is beautiful and true.",
 	},
 	{
-		Author: "Cassandra ClareClockwork Prince",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1270502031p2/150038.jpg",
-		Content: "Demon pox, oh demon poxJust how is it acquired?One must go down to the bad part of townUntil one is very tired.Demon pox, oh demon pox, I had it all along—Not the pox, you foolish blocks,I mean this very song—For I was right, and you were wrong!\"\"Will!\" Charlotte shouted over the noise, \"Have you LOST YOUR MIND? CEASE THAT INFERNAL RACKET! Jem—\" Jem, rising to his feet, clapped his hands over Will's mouth. \"Do you promise to be quiet?\" he hissed into his friend's ear.Will nodded, blue eyes blazing. Tessa was staring at him in amazement; they all were. She had seen Will many things—amused, bitter, condescending, angry, pitying—but never giddy before.Jem let him go. \"All right, then.\"Will slid to the floor, his back against the armchair, and threw up his arms. \"A demon pox on all your houses!\" he announced, and yawned.\"Oh, God, weeks of pox jokes,\" said Jem. \"We're in for it now.",
-	},
-	{
 		Author: "Rumi",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1217355543p2/875661.jpg",
 		Content: "In your light I learn how to love. In your beauty, how to make poems. You dance inside my chest where no-one sees you, but sometimes I do, and that sight becomes this art.",
@@ -12567,11 +12258,6 @@ var quotes = []*Quote{
 		Content: "We don’t need a list of rights and wrongs, tables of dos and don’ts: we need books, time, and silence. Thou shalt not is soon forgotten, but Once upon a time lasts forever.",
 	},
 	{
-		Author: "John GreenLooking for Alaska",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1353452301p2/1406384.jpg",
-		Content: "I am going to take this bucket of water and pour it on the flames of hell, and then I am going to use this torch to burn down the gates of paradise so that people will not love God for want of heaven or fear of hell, but because He is God.",
-	},
-	{
 		Author: "T.S. EliotThe Use of Poetry and the Use of Criticism",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1507887310p2/18540.jpg",
 		Content: "To do the useful thing, to say the courageous thing, to contemplate the beautiful thing: that is enough for one man's life.",
@@ -12670,11 +12356,6 @@ var quotes = []*Quote{
 		Author: "Edward Abbey",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1516467601p2/37218.jpg",
 		Content: "May your trails be crooked, winding, lonesome, dangerous, leading to the most amazing view.",
-	},
-	{
-		Author: "Leo TolstoyEssays, Letters and Miscellanies",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1506091388p2/128382.jpg",
-		Content: "If, then, I were asked for the most important advice I could give, that which I considered to be the most useful to the men of our century, I should simply say: in the name of God, stop a moment, cease your work, look around you.",
 	},
 	{
 		Author: "Henry Thomas Buckle",
@@ -12892,11 +12573,6 @@ var quotes = []*Quote{
 		Content: "The mind I love must have wild places.",
 	},
 	{
-		Author: "Mother Teresa",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1263888735p2/838305.jpg",
-		Content: "Let no one ever come to you without leaving better and happier. Be the living expression of God's kindness: kindness in your face, kindness in your eyes, kindness in your smile.",
-	},
-	{
 		Author: "David MitchellCloud Atlas",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1409248688p2/6538289.jpg",
 		Content: "Our lives are not our own. We are bound to others, past and present, and by each crime and every kindness, we birth our future.",
@@ -13005,16 +12681,6 @@ var quotes = []*Quote{
 		Author: "Groucho Marx",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1198590177p2/43244.jpg",
 		Content: "Humor is reason gone mad.",
-	},
-	{
-		Author: "Victor HugoLes Misérables",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1415946858p2/13661.jpg",
-		Content: "To love another person is to see the face of God.",
-	},
-	{
-		Author: "Marilyn Monroe",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1436929110p2/82952.jpg",
-		Content: "We are all born sexual creatures,thank God, but it's a pity so many people despise and crush this natural gift.",
 	},
 	{
 		Author: "J.K. RowlingHarry Potter and the Order of the Phoenix",
@@ -13362,11 +13028,6 @@ var quotes = []*Quote{
 		Content: "I think you should be a child for as long as you can. I have been successful for 74 years being able to do that.",
 	},
 	{
-		Author: "Rick RiordanThe Titan's Curse",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
-		Content: "God alert!\" Blackjack yelled. \"It's the wine dude!Mr. D sighed in exasperation. \"The next person, or horse, who calls me the 'wine dude' will end up in a bottle of Merlot!",
-	},
-	{
 		Author: "Chaim PotokThe Chosen",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1472717039p2/7385.jpg",
 		Content: "I've begun to realize that you can listen to silence and learn from it. It has a quality and a dimension all its own.",
@@ -13395,11 +13056,6 @@ var quotes = []*Quote{
 		Author: "Gena ShowalterSeduce the Darkness",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1447177534p2/48192.jpg",
 		Content: "I don't hate you.. I just don't like that you exist",
-	},
-	{
-		Author: "John Lennon",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1207677340p2/19968.jpg",
-		Content: "I believe in God, but not as one thing, not as an old man in the sky. I believe that what people call God is something in all of us. I believe that what Jesus and Mohammed and Buddha and all the rest said was right. It's just that the translations have gone wrong.",
 	},
 	{
 		Author: "E.E. CummingsPoems, 1923-1954",
@@ -13435,11 +13091,6 @@ var quotes = []*Quote{
 		Author: "Albert Camus",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1506091612p2/957894.jpg",
 		Content: "Blessed are the hearts that can bend; they shall never be broken.",
-	},
-	{
-		Author: "William NicholsonShadowlands",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1290447569p2/46130.jpg",
-		Content: "I pray because I can't help myself. I pray because I'm helpless. I pray because the need flows out of me all the time- waking and sleeping. It doesn't change God- it changes me.",
 	},
 	{
 		Author: "Lemony Snicket",
@@ -13490,11 +13141,6 @@ var quotes = []*Quote{
 		Author: "Brian SelznickThe Invention of Hugo Cabret",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1201028714p2/38120.jpg",
 		Content: "I address you all tonight for who you truly are: wizards, mermaids, travelers, adventurers, and magicians. You are the true dreamers.",
-	},
-	{
-		Author: "Douglas CouplandLife After God",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1489283217p2/1886.jpg",
-		Content: "And then I felt sad because I realized that once people are broken in certain ways, they can't ever be fixed, and this is something nobody ever tells you when you are young and it never fails to surprise you as you grow older as you see the people in your life break one by one. You wonder when your turn is going to be, or if it's already happened.",
 	},
 	{
 		Author: "LeVar Burton",
@@ -14267,11 +13913,6 @@ var quotes = []*Quote{
 		Content: "Not that I want to be a god or a hero. Just to change into a tree, grow for ages, not hurt anyone.",
 	},
 	{
-		Author: "John Henry Newman",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1494112023p2/24706.jpg",
-		Content: "I sought to hear the voice of God and climbed the topmost steeple, but God declared: \"Go down again - I dwell among the people.",
-	},
-	{
 		Author: "Robert Frost",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1183232004p2/7715.jpg",
 		Content: "Poetry is what gets lost in translation.",
@@ -14495,11 +14136,6 @@ var quotes = []*Quote{
 		Author: "Stephen ChboskyThe Perks of Being a Wallflower",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1199070302p2/12898.jpg",
 		Content: "I just want you to know that you’re very special… and the only reason I’m telling you is that I don’t know if anyone else ever has.",
-	},
-	{
-		Author: "Sylvia PlathThe Unabridged Journals of Sylvia Plath",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1373572652p2/4379.jpg",
-		Content: "God, but life is loneliness, despite all the opiates, despite the shrill tinsel gaiety of \"parties\" with no purpose, despite the false grinning faces we all wear. And when at last you find someone to whom you feel you can pour out your soul, you stop in shock at the words you utter - they are so rusty, so ugly, so meaningless and feeble from being kept in the small cramped dark inside you so long. Yes, there is joy, fulfillment and companionship - but the loneliness of the soul in its appalling self-consciousness is horrible and overpowering.",
 	},
 	{
 		Author: "Lemony SnicketThe Hostile Hospital",
@@ -14832,11 +14468,6 @@ var quotes = []*Quote{
 		Content: "Kind people have a way of working their way inside me and rooting there.",
 	},
 	{
-		Author: "Rick RiordanThe Battle of the Labyrinth",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1383677264p2/15872.jpg",
-		Content: "Rachel: You're a half-blood, too?Annabeth: Shhh! Just announce it to the world, how about?Rachel: Okay. Hey, everybody! These two aren't human! They're half Greek god!...They don't seem to care.",
-	},
-	{
 		Author: "J.K. RowlingHarry Potter and the Chamber of Secrets",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1510435123p2/1077326.jpg",
 		Content: "Well, you're expelling us aren't you?\" said Ron.\"Not today, Mr. Weasley.\"Snape looked as though Christmas had been canceled.",
@@ -14915,11 +14546,6 @@ var quotes = []*Quote{
 		Author: "Ted HughesLetters of Ted Hughes",
 		AuthorAvatar: "https://images.gr-assets.com/authors/1215068226p2/996.jpg",
 		Content: "The only calibration that counts is how much heart people invest, how much they ignore their fears of being hurt or caught out or humiliated. And the only thing people regret is that they didn't live boldly enough, that they didn't invest enough heart, didn't love enough. Nothing else really counts at all.",
-	},
-	{
-		Author: "Chuck PalahniukInvisible Monsters",
-		AuthorAvatar: "https://images.gr-assets.com/authors/1391203076p2/2546.jpg",
-		Content: "Parents are like God because you wanna know they're out there, and you want them to think well of you, but you really only call when you need something.",
 	},
 	{
 		Author: "Dr. Seuss",
