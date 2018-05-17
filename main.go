@@ -9,27 +9,39 @@ import (
 	"github.com/nlopes/slack"
 	"fmt"
 	"log"
+	"github.com/gin-gonic/gin/json"
 )
 
-func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	token := os.Getenv(`TOKEN`)
-	api := slack.New(token)
-	api.SetDebug(true)
+type Bot struct {
+	Api *slack.Client
+}
 
-	channels, err := api.GetChannels(false)
+func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
+	channels, err := bot.Api.GetChannels(false)
 	if err != nil {
-		fmt.Printf("%s\n", err)
-	}
-	for _, channel := range channels {
-		fmt.Println(channel.Name)
+		return events.APIGatewayProxyResponse{
+			StatusCode: http.StatusInternalServerError,
+			Body: err.Error(),
+		}, nil
 	}
 
+	bChannels, err := json.Marshal(channels)
+	return events.APIGatewayProxyResponse{
+		StatusCode: http.StatusOK,
+		Headers: map[string]string{
+			"content-type": "application/json",
+		},
+		Body: string(bChannels),
+	}, nil
+}
+
+func (bot *Bot)getQuote()(events.APIGatewayProxyResponse, error){
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Text:    "some text",
 	}
 	params.Attachments = []slack.Attachment{attachment}
-	channelID, timestamp, err := api.PostMessage("DAQFR3Z27", "Some text", params)
+	channelID, timestamp, err := bot.Api.PostMessage("DAQFR3Z27", "Some text", params)
 	if err != nil {
 		log.Printf("%s\n", err)
 		return events.APIGatewayProxyResponse{
@@ -44,11 +56,15 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 	}, nil
 }
 
-func getQuote()string {
-	return `abc`
+func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
+	action := request.QueryStringParameters["action"]
+	fmt.Println(action)
+	return bot.getChannels()
 }
 
 func main() {
-	// Make the handler available for Remote Procedure Call by AWS Lambda
-	lambda.Start(handler)
+	bot := &Bot{
+		Api: slack.New(os.Getenv(`TOKEN`)),
+	}
+	lambda.Start(bot.handler)
 }
