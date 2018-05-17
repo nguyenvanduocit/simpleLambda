@@ -122,7 +122,7 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 }
 
 func (bot *Bot)loadQUotes()error{
-	bQuotes, err := ioutil.ReadFile("./data/quotes.json")
+	bQuotes, err := ioutil.ReadFile("./quotes.json")
 	if err != nil {
 		return err
 	}
