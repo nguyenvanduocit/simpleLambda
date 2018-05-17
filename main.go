@@ -45,10 +45,12 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 func (bot *Bot)sendQuote()(events.APIGatewayProxyResponse, error){
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
+		Title: "Today Quote",
 		Text:    "some text",
+		AuthorName: "Drunk Friend",
 	}
 	params.Attachments = []slack.Attachment{attachment}
-	channelID, timestamp, err := bot.Api.PostMessage("DAQFR3Z27", "Some text", params)
+	channelID, timestamp, err := bot.Api.PostMessage("DAQFR3Z27", "", params)
 	if err != nil {
 		log.Printf("%s\n", err)
 		return events.APIGatewayProxyResponse{
@@ -65,8 +67,9 @@ func (bot *Bot)sendQuote()(events.APIGatewayProxyResponse, error){
 
 func (bot *Bot)getActions()(events.APIGatewayProxyResponse, error){
 	bActions, _ := json.Marshal([]string{
-		"sendMorningQuote",
-		"sendSleepQuote",
+		"channels",
+		"morningQuote",
+		"sleepingQuote",
 	})
 
 	return events.APIGatewayProxyResponse{
@@ -94,6 +97,8 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 	case "channels":
 		return bot.getChannels()
 	case "morningQuote":
+		return bot.sendQuote()
+	case "sleepingQuote":
 		return bot.sendQuote()
 	}
 	return bot.getActions()
