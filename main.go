@@ -42,7 +42,7 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 	}, nil
 }
 
-func (bot *Bot)getQuote()(events.APIGatewayProxyResponse, error){
+func (bot *Bot)sendQuote()(events.APIGatewayProxyResponse, error){
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Text:    "some text",
@@ -93,8 +93,10 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 	switch action {
 	case "channels":
 		return bot.getChannels()
+	case "morningQuote":
+		return bot.sendQuote()
 	}
-	return bot.getChannels()
+	return bot.getActions()
 }
 
 func main() {
