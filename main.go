@@ -15,6 +15,15 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 	token := os.Getenv(`TOKEN`)
 	api := slack.New(token)
 	api.SetDebug(true)
+
+	channels, err := api.GetChannels(false)
+	if err != nil {
+		fmt.Printf("%s\n", err)
+	}
+	for _, channel := range channels {
+		fmt.Println(channel.Name)
+	}
+
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Text:    "some text",
