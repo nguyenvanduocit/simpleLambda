@@ -9,10 +9,22 @@ import (
 	"github.com/nlopes/slack"
 	"fmt"
 	"github.com/gin-gonic/gin/json"
+	"io/ioutil"
+	json2 "encoding/json"
+	"time"
+	"math/rand"
 )
+
+type Quote struct {
+	Author string `json:"author"`
+	AuthorAvatar string `json:"author_avatar"`
+	Content string `json:"content"`
+	Tags []string `json:"tags"`
+}
 
 type Bot struct {
 	Api *slack.Client
+	Quotes []*Quote
 }
 
 func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
@@ -36,10 +48,21 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 }
 
 func (bot *Bot)sendQuote(channelId string)(events.APIGatewayProxyResponse, error){
+
+	quote, err := bot.getRandomQuote()
+	if err != nil {
+		return events.APIGatewayProxyResponse{
+			StatusCode: http.StatusInternalServerError,
+			Body: err.Error(),
+		}, nil
+	}
+
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Title: "Today Quote",
-		Text:    "some text",
+		AuthorName: quote.Author,
+		Text:    quote.Content,
+		ImageURL: quote.AuthorAvatar,
 	}
 	params.Attachments = []slack.Attachment{attachment}
 	channelID, timestamp, err := bot.Api.PostMessage(channelId, "", params)
@@ -65,7 +88,6 @@ func (bot *Bot)getActions()(events.APIGatewayProxyResponse, error){
 	bActions, _ := json.Marshal([]string{
 		"channels",
 		"morningQuote",
-		"sleepingQuote",
 	})
 
 	return events.APIGatewayProxyResponse{
@@ -95,11 +117,27 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 	case "morningQuote":
 		channelId := request.QueryStringParameters["channelId"]
 		return bot.sendQuote(channelId)
-	case "sleepingQuote":
-		channelId := request.QueryStringParameters["channelId"]
-		return bot.sendQuote(channelId)
 	}
 	return bot.getActions()
+}
+
+func (bot *Bot)loadQUotes()error{
+	bQuotes, err := ioutil.ReadFile("./../data/quotes.json")
+	if err != nil {
+		return err
+	}
+	if err := json2.Unmarshal(bQuotes, &bot.Quotes); err != nil {
+		return err
+	}
+	return nil
+}
+
+func (bot *Bot)getRandomQuote()(*Quote, error){
+	if len(bot.Quotes) == 0 {
+		bot.loadQUotes()
+	}
+	rand.Seed(time.Now().Unix())
+	return bot.Quotes[rand.Intn(len(bot.Quotes))], nil
 }
 
 func main() {
