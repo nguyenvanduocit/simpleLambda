@@ -12,7 +12,7 @@ import (
 )
 
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
-	token := os.Getenv(`WEBHOOK`)
+	token := os.Getenv(`TOKEN`)
 	api := slack.New(token)
 
 	params := slack.PostMessageParameters{}
