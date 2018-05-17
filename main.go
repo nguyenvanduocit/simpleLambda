@@ -8,7 +8,6 @@ import (
 	"os"
 	"github.com/nlopes/slack"
 	"fmt"
-	"log"
 	"github.com/gin-gonic/gin/json"
 )
 
@@ -25,13 +24,7 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 		}, nil
 	}
 
-	bChannels, err := json.Marshal(channels)
-	if err != nil {
-		return events.APIGatewayProxyResponse{
-			StatusCode: http.StatusInternalServerError,
-			Body: err.Error(),
-		}, nil
-	}
+	bChannels, _ := json.Marshal(channels)
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: http.StatusOK,
@@ -42,26 +35,29 @@ func (bot *Bot)getChannels()(events.APIGatewayProxyResponse, error) {
 	}, nil
 }
 
-func (bot *Bot)sendQuote()(events.APIGatewayProxyResponse, error){
+func (bot *Bot)sendQuote(channelId string)(events.APIGatewayProxyResponse, error){
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Title: "Today Quote",
 		Text:    "some text",
-		AuthorName: "Drunk Friend",
 	}
 	params.Attachments = []slack.Attachment{attachment}
-	channelID, timestamp, err := bot.Api.PostMessage("DAQFR3Z27", "", params)
+	channelID, timestamp, err := bot.Api.PostMessage(channelId, "", params)
+
 	if err != nil {
-		log.Printf("%s\n", err)
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusInternalServerError,
 			Body: err.Error(),
 		}, nil
 	}
-	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
+
+	bMessage, _ := json.Marshal(map[string]string{
+		"message": fmt.Sprintf("Message successfully sent to channel %s at %s", channelID, timestamp),
+	})
+
 	return events.APIGatewayProxyResponse{
 		StatusCode: http.StatusOK,
-		Body: `Success`,
+		Body: string(bMessage),
 	}, nil
 }
 
@@ -97,9 +93,11 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 	case "channels":
 		return bot.getChannels()
 	case "morningQuote":
-		return bot.sendQuote()
+		channelId := request.QueryStringParameters["channelId"]
+		return bot.sendQuote(channelId)
 	case "sleepingQuote":
-		return bot.sendQuote()
+		channelId := request.QueryStringParameters["channelId"]
+		return bot.sendQuote(channelId)
 	}
 	return bot.getActions()
 }
