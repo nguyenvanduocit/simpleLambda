@@ -14,7 +14,7 @@ import (
 func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events.APIGatewayProxyResponse, error) {
 	token := os.Getenv(`TOKEN`)
 	api := slack.New(token)
-
+	api.SetDebug(true)
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
 		Text:    "some text",
@@ -25,7 +25,7 @@ func handler(ctx context.Context, request events.APIGatewayProxyRequest) (events
 		log.Printf("%s\n", err)
 		return events.APIGatewayProxyResponse{
 			StatusCode: http.StatusInternalServerError,
-			Body: `Success`,
+			Body: err.Error(),
 		}, nil
 	}
 	fmt.Printf("Message successfully sent to channel %s at %s", channelID, timestamp)
