@@ -57,10 +57,11 @@ func (bot *Bot)sendQuote(channelId string)(events.APIGatewayProxyResponse, error
 
 	params := slack.PostMessageParameters{}
 	attachment := slack.Attachment{
-		Title: "Today Quote",
-		AuthorName: quote.Author,
+		Title: "Ramdom quote",
 		Text:    quote.Content,
-		ImageURL: quote.AuthorAvatar,
+		ThumbURL: quote.AuthorAvatar,
+		Color: "#008952",
+		Footer: quote.Author,
 	}
 	params.Attachments = []slack.Attachment{attachment}
 	channelID, timestamp, err := bot.Api.PostMessage(channelId, "", params)
