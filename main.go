@@ -122,7 +122,7 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 }
 
 func (bot *Bot)loadQUotes()error{
-	bQuotes, err := ioutil.ReadFile("./../data/quotes.json")
+	bQuotes, err := ioutil.ReadFile("./data/quotes.json")
 	if err != nil {
 		return err
 	}
@@ -134,7 +134,9 @@ func (bot *Bot)loadQUotes()error{
 
 func (bot *Bot)getRandomQuote()(*Quote, error){
 	if len(bot.Quotes) == 0 {
-		bot.loadQUotes()
+		if err:= bot.loadQUotes(); err != nil {
+			return nil, err
+		}
 	}
 	rand.Seed(time.Now().Unix())
 	return bot.Quotes[rand.Intn(len(bot.Quotes))], nil
