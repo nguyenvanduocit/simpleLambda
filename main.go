@@ -13,6 +13,8 @@ import (
 	json2 "encoding/json"
 	"time"
 	"math/rand"
+	"path/filepath"
+	"log"
 )
 
 type Quote struct {
@@ -122,6 +124,12 @@ func (bot *Bot)handler(ctx context.Context, request events.APIGatewayProxyReques
 }
 
 func (bot *Bot)loadQUotes()error{
+	dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Println(dir)
+
 	bQuotes, err := ioutil.ReadFile("./quotes.json")
 	if err != nil {
 		return err
